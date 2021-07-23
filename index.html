@@ -26,11 +26,19 @@
     <!-- Theme CSS - Includes Bootstrap -->
     <link href="css/creative.min.css" rel="stylesheet">
 
-    <!-- LinkedIn Profile Badge -->
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
     <!-- Prism -->
     <link href="css/prism.css" rel="stylesheet" />
+
+    <style>
+        .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    </style>
 
 </head>
 
@@ -48,7 +56,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#description">Meshes</a>
+                        <a class="nav-link js-scroll-trigger" href="#gameplay">Summary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#portfolio">Models</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Contact Information</a>
@@ -57,6 +68,7 @@
             </div>
         </div>
     </nav>
+
 
     <!-- Masthead -->
     <header class="masthead">
@@ -75,38 +87,127 @@
         </div>
     </header>
 
-    <!-- About Section -->
-    <section class="page-section bg-primary" id="description">
+
+    <!-- Summary -->
+    <section class="page-section bg-primary" id="gameplay">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="text-white mt-0">Meshes</h2>
+                    <h2 class="text-white mt-0">Gameplay</h2>
                     <hr class="divider light my-4">
                 </div>
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <p align="center" class="text-white-50 mb-4 mt-4">
-                            The game starts with the player on one side of the map, and the enemies on the other. 
-                            The player must kill enemies and control the three capture points in order to earn points. 
-                            Once either team reaches the point limit, they win the game. <br>
-                            This class checks the distances between the enemy AI and the three capture points, in addition to whether or not the point has been captured. 
-                            It then returns the closest point to the enemy which has not been captured.
-                        </p>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item mb-4" width="560" height="315" src="https://www.youtube-nocookie.com/embed/scO3EfyIwu4" frameborder="0" 
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
+                    <p align="center" class="text-white-50 mb-4 mt-4">
+                        This university project involved having to make use of grids using blueprints in Unreal Engine 4,
+                        so I decided to create a game in which the player must navigate through rooms containing random minigames.<br>
+                        The minigame rooms are placed along a path which is determined by a breadth-first search between a random point on the first and last row of a grid. <br>
+                        The length of the path depends on which difficulty the player selects.
+                        There are four different minigame rooms and if the player can reach the end room, they win.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-
+    <!-- Models -->
+    <section id="portfolio">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
+                        <img class="img-fluid" src="img/Scene Low Res 1.png" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">
+                                Town
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
+                        <img class="img-fluid" src="img/Scene Low Res 2.png" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">
+                                Town
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
+                        <img class="img-fluid" src="img/Scene Low Res 3.png" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">
+                                Town
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
+                        <img class="img-fluid" src="img/Pillar Low Res.png" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">
+                                Pillar
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
+                        <img class="img-fluid" src="img/Archway Low Res.png" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">
+                                Archway
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="https://lukebaughan.github.io/DodgeThisWebPage/">
+                        <img class="img-fluid" src="img/Wall Low Res.png" alt="Dodge This!">
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">
+                                Wall & Wall Divider
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="https://lukebaughan.github.io/firstpersonshooter/">
+                        <img class="img-fluid" src="img/Fountain Low Res.png" alt="First Person Shooter">
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">
+                                Fountain
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="https://lukebaughan.github.io/graphics/">
+                        <img class="img-fluid" src="img/Sword Shield Low Res.png" alt="Graphics">
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">
+                                Sword & Shield
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="https://lukebaughan.github.io/marioplatformer/">
+                        <img class="img-fluid" src="img/Tree Low Res.png" alt="Mario Platformer">
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">
+                                Pine Tree
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section class="page-section" id="contact">
@@ -120,14 +221,17 @@
             <div class="row">
                 <div class="col-lg-6 mr-auto text-center">
                     <i class="fab fa-github fa-3x mb-3 text-muted"></i>
-                    <!-- Make sure to change the email address in anchor text AND the link below! -->
-                    <a class="d-block" href="https://github.com/LukeBaughan">GitHub Profile</a>
+                    <a class="d-block" href="https://github.com/LukeBaughan" target="_blank">GitHub Profile</a>
                 </div>
                 <div class="col-lg-6 mr-auto text-center">
-                    <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="luke-baughan"><a class="LI-simple-link" href='https://uk.linkedin.com/in/luke-baughan?trk=profile-badge'>Luke Baughan</a></div>
+                    <i class="fab fa-linkedin fa-3x mb-3 text-muted"></i>
+                    <a class="d-block" href="https://www.linkedin.com/in/luke-baughan/" target="_blank">LinkedIn Profile</a>
                 </div>
+                <!--<div class="col-lg-6 mr-auto text-center">-->
+                <!--<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="luke-baughan" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://uk.linkedin.com/in/luke-baughan?trk=profile-badge">Luke Baughan</a></div>-->
+                <!--<div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="luke-baughan"><a class="LI-simple-link" href='https://uk.linkedin.com/in/luke-baughan?trk=profile-badge'>Luke Baughan</a></div>-->
+                <!--</div>-->
             </div>
-        </div>
     </section>
 
     <!-- Footer -->
@@ -147,6 +251,9 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+
+    <!-- LinkedIn Profile Badge -->
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
 </body>
 
